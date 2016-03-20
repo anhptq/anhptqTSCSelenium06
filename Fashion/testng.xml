@@ -1,1 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="com.vsii.tsc.TSCSelenium06.Anhptq.test.TestBase"/>
+      <class name="com.vsii.tsc.TSCSelenium06.Anhptq.test.Data"/>
+      <class name="com.vsii.tsc.TSCSelenium06.Anhptq.test.Login"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

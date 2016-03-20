@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="com.vsii.tsc.TSCSelenium06.Anhptq.test.TestBase"/>
+      <class name="com.vsii.tsc.TSCSelenium06.Anhptq.test.Data"/>
+      <class name="com.vsii.tsc.TSCSelenium06.Anhptq.test.Login"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.vsii.tsc.TSCSelenium06.Anhptq.test.Login">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="LoginFail"/>
+          <include name="LoginSuccess"/>
+        </methods>
+      </class> <!-- com.vsii.tsc.TSCSelenium06.Anhptq.test.Login -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

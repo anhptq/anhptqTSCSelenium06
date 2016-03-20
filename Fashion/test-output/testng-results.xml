@@ -1,33 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="2" failed="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16747" started-at="2016-02-21T18:00:59Z" finished-at="2016-02-21T18:01:16Z">
+  <suite name="Default suite" duration-ms="10" started-at="2016-03-20T18:14:32Z" finished-at="2016-03-20T18:14:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16747" started-at="2016-02-21T18:00:59Z" finished-at="2016-02-21T18:01:16Z">
-      <class name="TSC.NewTours.App">
-        <test-method status="FAIL" signature="loginSuccess()[pri:0, instance:TSC.NewTours.App@3f5566]" name="loginSuccess" duration-ms="16733" started-at="2016-02-22T01:00:59Z" finished-at="2016-02-22T01:01:16Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Flight Details] but found [[[FirefoxDriver: firefox on WINDOWS (82b40ab3-0616-401a-8d59-c31705bd9809)] -> xpath: /html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[1]/td/font/font/b/font/font]]]]>
-            </message>
+    <test name="Default test" duration-ms="10" started-at="2016-03-20T18:14:32Z" finished-at="2016-03-20T18:14:32Z">
+      <class name="com.vsii.tsc.TSCSelenium06.Anhptq.test.Login">
+        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:com.vsii.tsc.TSCSelenium06.Anhptq.test.Login@203ea1]" name="beforeClass" is-config="true" duration-ms="0" started-at="2016-03-21T01:14:32Z" finished-at="2016-03-21T01:14:32Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Flight Details] but found [[[FirefoxDriver: firefox on WINDOWS (82b40ab3-0616-401a-8d59-c31705bd9809)] -> xpath: /html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[1]/td/font/font/b/font/font]]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:179)
-	at TSC.NewTours.App.loginSuccess(App.java:31)
+              <![CDATA[java.lang.NullPointerException
+	at com.vsii.tsc.TSCSelenium06.Anhptq.test.TestBase.beforeClass(TestBase.java:37)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="SKIP" signature="LoginFail(java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium06.Anhptq.test.Login@203ea1]" name="LoginFail" duration-ms="0" started-at="2016-03-21T01:14:32Z" data-provider="LoginFail" finished-at="2016-03-21T01:14:32Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method public void com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.LoginFail(java.lang.String,java.lang.String) requires a @DataProvider named : LoginFail]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method public void com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.LoginFail(java.lang.String,java.lang.String) requires a @DataProvider named : LoginFail
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:263)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:419)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
 	at org.testng.TestRunner.privateRun(TestRunner.java:782)
@@ -46,11 +68,51 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginSuccess -->
-      </class> <!-- TSC.NewTours.App -->
+        </test-method> <!-- LoginFail -->
+        <test-method status="SKIP" signature="LoginSuccess(java.lang.String, java.lang.String)[pri:1, instance:com.vsii.tsc.TSCSelenium06.Anhptq.test.Login@203ea1]" name="LoginSuccess" duration-ms="0" started-at="2016-03-21T01:14:32Z" data-provider="LoginSuccess" finished-at="2016-03-21T01:14:32Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method public void com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.LoginSuccess(java.lang.String,java.lang.String) requires a @DataProvider named : LoginSuccess]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method public void com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.LoginSuccess(java.lang.String,java.lang.String) requires a @DataProvider named : LoginSuccess
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:263)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:419)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginSuccess -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.vsii.tsc.TSCSelenium06.Anhptq.test.Login@203ea1]" name="tearDown" is-config="true" duration-ms="0" started-at="2016-03-21T01:14:32Z" finished-at="2016-03-21T01:14:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.vsii.tsc.TSCSelenium06.Anhptq.test.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
