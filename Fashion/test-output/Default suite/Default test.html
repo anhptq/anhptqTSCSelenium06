@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/3</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 21 01:14:32 ICT 2016</td>
+<td>Started on:</td><td>Mon Mar 21 15:45:45 ICT 2016</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (10 ms)</td>
+<tr><td>Total time:</td><td>3 seconds (3351 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,25 +68,32 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.beforeClass()'><b>beforeClass</b><br>Test class: com.vsii.tsc.TSCSelenium06.Anhptq.test.Login</td>
+<td title='com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.LoginSuccess()'><b>LoginSuccess</b><br>Test class: com.vsii.tsc.TSCSelenium06.Anhptq.test.Login<br>Parameters: testabc@gmail.com, abc123</td>
 <td><div><pre>java.lang.NullPointerException
-	at com.vsii.tsc.TSCSelenium06.Anhptq.test.TestBase.beforeClass(TestBase.java:37)
+	at com.vsii.tsc.TSCSelenium06.Anhptq.pages.LoginPage.login(LoginPage.java:29)
+	at com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.LoginSuccess(Login.java:18)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
 	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
@@ -96,18 +103,25 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div><a href='#' onClick='toggleBox("stack-trace8616567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace8616567'><pre>java.lang.NullPointerException
-	at com.vsii.tsc.TSCSelenium06.Anhptq.test.TestBase.beforeClass(TestBase.java:37)
+</pre></div><a href='#' onClick='toggleBox("stack-trace21541842", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace21541842'><pre>java.lang.NullPointerException
+	at com.vsii.tsc.TSCSelenium06.Anhptq.pages.LoginPage.login(LoginPage.java:29)
+	at com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.LoginSuccess(Login.java:18)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
 	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
@@ -119,7 +133,75 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div></td>
 <td>0</td>
-<td>null</td></tr>
+<td>com.vsii.tsc.TSCSelenium06.Anhptq.test.Login@8dacdf</td></tr>
+<tr>
+<td title='com.vsii.tsc.TSCSelenium06.Anhptq.test.QuickView.view()'><b>view</b><br>Test class: com.vsii.tsc.TSCSelenium06.Anhptq.test.QuickView</td>
+<td><div><pre>java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:39)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:49)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:70)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
+	at com.vsii.tsc.TSCSelenium06.Anhptq.test.QuickView.view(QuickView.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div><a href='#' onClick='toggleBox("stack-trace33514690", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace33514690'><pre>java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:39)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:49)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:70)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
+	at com.vsii.tsc.TSCSelenium06.Anhptq.test.QuickView.view(QuickView.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>0</td>
+<td>com.vsii.tsc.TSCSelenium06.Anhptq.test.QuickView@79be86</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -129,9 +211,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.LoginFail()'><b>LoginFail</b><br>Test class: com.vsii.tsc.TSCSelenium06.Anhptq.test.Login</td>
+<td title='com.vsii.tsc.TSCSelenium06.Anhptq.test.CreateAcc.CreateAccFail()'><b>CreateAccFail</b><br>Test class: com.vsii.tsc.TSCSelenium06.Anhptq.test.CreateAcc</td>
 <td><div><pre>org.testng.TestNGException: 
-Method public void com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.LoginFail(java.lang.String,java.lang.String) requires a @DataProvider named : LoginFail
+Method public void com.vsii.tsc.TSCSelenium06.Anhptq.test.CreateAcc.CreateAccFail(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : CreateAccFail
 	at org.testng.internal.Parameters.findDataProvider(Parameters.java:263)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:419)
 	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
@@ -153,9 +235,9 @@ Method public void com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.LoginFail(java.l
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div><a href='#' onClick='toggleBox("stack-trace15133123", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace15133123'><pre>org.testng.TestNGException: 
-Method public void com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.LoginFail(java.lang.String,java.lang.String) requires a @DataProvider named : LoginFail
+</pre></div><a href='#' onClick='toggleBox("stack-trace12823813", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace12823813'><pre>org.testng.TestNGException: 
+Method public void com.vsii.tsc.TSCSelenium06.Anhptq.test.CreateAcc.CreateAccFail(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : CreateAccFail
 	at org.testng.internal.Parameters.findDataProvider(Parameters.java:263)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:419)
 	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
@@ -179,11 +261,11 @@ Method public void com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.LoginFail(java.l
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div></td>
 <td>0</td>
-<td>com.vsii.tsc.TSCSelenium06.Anhptq.test.Login@203ea1</td></tr>
+<td>com.vsii.tsc.TSCSelenium06.Anhptq.test.CreateAcc@ce8af7</td></tr>
 <tr>
-<td title='com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.LoginSuccess()'><b>LoginSuccess</b><br>Test class: com.vsii.tsc.TSCSelenium06.Anhptq.test.Login</td>
+<td title='com.vsii.tsc.TSCSelenium06.Anhptq.test.CreateAcc.CreateAccSuccess()'><b>CreateAccSuccess</b><br>Test class: com.vsii.tsc.TSCSelenium06.Anhptq.test.CreateAcc</td>
 <td><div><pre>org.testng.TestNGException: 
-Method public void com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.LoginSuccess(java.lang.String,java.lang.String) requires a @DataProvider named : LoginSuccess
+Method public void com.vsii.tsc.TSCSelenium06.Anhptq.test.CreateAcc.CreateAccSuccess(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : CreateAccSuccess
 	at org.testng.internal.Parameters.findDataProvider(Parameters.java:263)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:419)
 	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
@@ -205,9 +287,9 @@ Method public void com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.LoginSuccess(jav
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div><a href='#' onClick='toggleBox("stack-trace13821913", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace13821913'><pre>org.testng.TestNGException: 
-Method public void com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.LoginSuccess(java.lang.String,java.lang.String) requires a @DataProvider named : LoginSuccess
+</pre></div><a href='#' onClick='toggleBox("stack-trace621740", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace621740'><pre>org.testng.TestNGException: 
+Method public void com.vsii.tsc.TSCSelenium06.Anhptq.test.CreateAcc.CreateAccSuccess(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : CreateAccSuccess
 	at org.testng.internal.Parameters.findDataProvider(Parameters.java:263)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:419)
 	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
@@ -231,7 +313,77 @@ Method public void com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.LoginSuccess(jav
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div></td>
 <td>0</td>
-<td>com.vsii.tsc.TSCSelenium06.Anhptq.test.Login@203ea1</td></tr>
+<td>com.vsii.tsc.TSCSelenium06.Anhptq.test.CreateAcc@ce8af7</td></tr>
+<tr>
+<td title='com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.LoginFail()'><b>LoginFail</b><br>Test class: com.vsii.tsc.TSCSelenium06.Anhptq.test.Login</td>
+<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+Caused by: java.lang.NullPointerException
+	at com.vsii.tsc.TSCSelenium06.Anhptq.test.Data.getTable(Data.java:114)
+	at com.vsii.tsc.TSCSelenium06.Anhptq.test.Data.LoginFail(Data.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 20 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace12486525", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace12486525'><pre>java.lang.RuntimeException: java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+Caused by: java.lang.NullPointerException
+	at com.vsii.tsc.TSCSelenium06.Anhptq.test.Data.getTable(Data.java:114)
+	at com.vsii.tsc.TSCSelenium06.Anhptq.test.Data.LoginFail(Data.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 20 more
+</pre></div></td>
+<td>0</td>
+<td>com.vsii.tsc.TSCSelenium06.Anhptq.test.Login@8dacdf</td></tr>
 </table><p>
 </body>
 </html>

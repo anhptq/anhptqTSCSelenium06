@@ -7,28 +7,28 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 	WebDriver driver;
-	
+
 	@FindBy(xpath = "/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a")
 	WebElement signin;
-	
-	@FindBy(id="email")
+
+	@FindBy(id = "email")
 	WebElement email;
-	
-	@FindBy(name="passwd")
+
+	@FindBy(name = "passwd")
 	WebElement passwd;
-	
-	@FindBy(name="SubmitLogin")
+
+	@FindBy(name = "SubmitLogin")
 	WebElement SubmitLogin;
-	
-	public void setDriver (WebDriver driver) {
+
+	public void setDriver(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
-	public void login (String e, String p) {
+
+	public void login(String e, String p) {
 		signin.click();
 		email.sendKeys(e);
-	    passwd.sendKeys(p);
-	    SubmitLogin.click();
+		passwd.sendKeys(p);
+		SubmitLogin.click();
 	}
 }

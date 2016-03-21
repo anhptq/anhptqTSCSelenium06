@@ -3,18 +3,42 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
+      <class name="com.vsii.tsc.TSCSelenium06.Anhptq.pages.LoginPage"/>
+      <class name="com.vsii.tsc.TSCSelenium06.Anhptq.test.TestBase"/>
       <class name="com.vsii.tsc.TSCSelenium06.Anhptq.test.Login"/>
+      <class name="com.vsii.tsc.TSCSelenium06.Anhptq.test.QuickView"/>
+      <class name="com.vsii.tsc.TSCSelenium06.Anhptq.test.CreateAcc"/>
+      <class name="com.vsii.tsc.TSCSelenium06.Anhptq.test.Data"/>
+      <class name="com.vsii.tsc.TSCSelenium06.Anhptq.pages.QuickViewPage"/>
+      <class name="com.vsii.tsc.TSCSelenium06.Anhptq.methods.ReadProperties"/>
+      <class name="com.vsii.tsc.TSCSelenium06.Anhptq.pages.CreateAccPage"/>
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
       <class name="com.vsii.tsc.TSCSelenium06.Anhptq.test.Login">
         <methods>
-          <include name="beforeClass"/>
           <include name="LoginFail"/>
-          <include name="LoginSuccess"/>
+          <include name="LoginSuccess" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.vsii.tsc.TSCSelenium06.Anhptq.test.Login -->
+      <class name="com.vsii.tsc.TSCSelenium06.Anhptq.test.TestBase">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.vsii.tsc.TSCSelenium06.Anhptq.test.TestBase -->
+      <class name="com.vsii.tsc.TSCSelenium06.Anhptq.test.CreateAcc">
+        <methods>
+          <include name="CreateAccSuccess"/>
+          <include name="CreateAccFail"/>
+        </methods>
+      </class> <!-- com.vsii.tsc.TSCSelenium06.Anhptq.test.CreateAcc -->
+      <class name="com.vsii.tsc.TSCSelenium06.Anhptq.test.QuickView">
+        <methods>
+          <include name="view"/>
+        </methods>
+      </class> <!-- com.vsii.tsc.TSCSelenium06.Anhptq.test.QuickView -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
